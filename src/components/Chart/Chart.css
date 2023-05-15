@@ -1,9 +1,18 @@
 .chart {
   padding: 1rem;
   border-radius: 12px;
-  background-color: #f8dfff;
+  background-color: #a6db15;
   text-align: center;
   display: flex;
   justify-content: space-around;
   height: 10rem;
+  animation: color-change 0.10s infinite;
 }
+   l:hover{
+      animation: color-change 0.25s infinite;
+   }      
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+} 

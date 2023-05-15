@@ -10,15 +10,16 @@
   width: 100%;
   border: 1px solid #313131;
   border-radius: 12px;
-  background-color: #c3b4f3;
+  background-color: #f3145e;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  animation: color-change 0.5s infinite;
 }
 
 .chart-bar__fill {
-  background-color: #4826b9;
+  background-color: #130455;
   width: 100%;
   transition: all 0.3s ease-out;
 }
@@ -28,3 +29,15 @@
   font-size: 0.5rem;
   text-align: center;
 }
+
+.label {
+  animation: color-change 0.10s infinite;
+  }
+   label:hover{
+      animation: color-change 0.50s infinite;
+   }      
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+} 

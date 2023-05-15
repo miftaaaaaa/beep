@@ -13,7 +13,7 @@ const ExpenseItem = (props) => {
           <h2>{props.title}</h2>
           <div>
             <div className='expense-item__price'>Harga = ${props.amount}</div>
-            <div className='expense-item__price'>Total = {props.total}</div>
+            <div className='expense-item__price'>Stock = {props.total}</div>
             <div className='expense-item__price'>Gambar = {props.file}</div>
           </div>
         </div>

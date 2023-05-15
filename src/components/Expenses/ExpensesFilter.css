@@ -22,3 +22,15 @@
   font-weight: bold;
   border-radius: 6px;
 }
+
+.label {
+  animation: color-change 0.10s infinite;
+  }
+   label:hover{
+      animation: color-change 0.50s infinite;
+   }      
+@keyframes color-change {
+  0% { color: red; }
+  50% { color: blue; }
+  100% { color: green; }
+} 
