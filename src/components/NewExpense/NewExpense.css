@@ -36,3 +36,8 @@
 .new-expense button.alternative:active {
   background-color: #ddb3f8;
 }
+
+.but {
+  margin-top: 20%;
+  margin-left: 5%;
+}

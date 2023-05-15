@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
+import './App.css'
 
 
 const DUMMY_EXPENSES = [
@@ -11,7 +12,7 @@ const DUMMY_EXPENSES = [
     date: new Date(2020, 7, 14),
     total: '2',
     file: '',
-    
+
     
   },
   { id: 'e2', 
@@ -19,7 +20,7 @@ const DUMMY_EXPENSES = [
     amount: 799.49, 
     date: new Date(2021, 2, 12),
     total: '1',
-    file: 'Screenshot (1).png - image/png',
+    file: '',
   },
   {
     id: 'e3',
@@ -27,7 +28,7 @@ const DUMMY_EXPENSES = [
     amount: 294.67,
     date: new Date(2021, 2, 28),
     total: '4',
-    file: 'Screenshot (1).png - image/png',
+    file: '',
   },
   {
     id: 'e4',
@@ -35,7 +36,7 @@ const DUMMY_EXPENSES = [
     amount: 450,
     date: new Date(2021, 5, 12),
     total: '6',
-    file: 'Screenshot (1).png - image/png',
+    file: '',
   },
 ];
 
@@ -58,7 +59,7 @@ const App = () => {
   // );
 
   return (
-    <div>
+    <div className='test'>
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
